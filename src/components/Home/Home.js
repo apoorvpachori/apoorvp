@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import './Home.scss'
 import { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
+import Logo from './Logo/Logo';
 
 const Home = () => {
 
@@ -34,6 +35,7 @@ const Home = () => {
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
 
             </div>
+            <Logo />
         </div>
     )
 }
