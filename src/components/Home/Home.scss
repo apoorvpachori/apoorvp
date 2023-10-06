@@ -1,12 +1,22 @@
 .home-page {
+    display: flex; // This makes the child elements (text-zone and logo) to be in a row layout
+    justify-content: space-between; // This will place the child elements on opposite ends of the container
+    align-items: center;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center; // Align children vertically in the center
+    height: 100vh; // This assumes you want it to take up the whole viewport height. Adjust as needed.
+    
     .text-zone {
-      position: absolute;
       left: 10%;
       top: 50%;
       transform: translateY(-50%);
-      width: 40%;
-      max-height: 90%;
+      width: 40%; // Adjust as needed
+      padding: 20px; // Add some padding
+      position: inherit;
     }
+
   
     h1 {
       color: #fff;
@@ -78,7 +88,10 @@
     .home-page h1:after {
       display: none;
     }
-  
+    .home-page {
+      flex-direction: column; // This will stack the children (text-zone and logo) vertically
+      align-items: center; // This will horizontally center the children
+  }
     .home-page .text-zone {
       position: initial;
       width: 100%;
@@ -96,21 +109,11 @@
   
     .logo-container {
       position: relative;
-      width: 100px;
+      width: 50%;
       height: auto;
-      top: 50px;
       right: 0;
       box-sizing: border-box;
       margin: auto;
       left: 0;
-    }
-  
-    .logo-container svg {
-      position: absolute;
-      top: auto;
-      right: auto;
-      bottom: auto;
-      left: 0;
-      margin: auto;
     }
   }

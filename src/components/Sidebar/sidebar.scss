@@ -14,7 +14,7 @@
       img {
         display: block;
         margin: 8px auto;
-        width: 24px;
+        width: 32px;
         height: auto;
   
         &.sub-logo {
@@ -89,10 +89,16 @@
           content: 'CONTACT';
         }
       }
-  
-      a.portfolio-link {
+
+      a.experience-link {
         &:after {
-          content: 'PORTFOLIO';
+          content: 'EXPERIENCE';
+        }
+      }
+
+      a.projects-link {
+        &:after {
+          content: 'PROJECTS';
         }
       }
   
@@ -143,11 +149,11 @@
       height: auto;
       min-height: auto;
   
-       ul, nav {
+      ul, nav {
         display: none;
-       }
+      }
   
-       nav {
+      nav {
         width: 100%;
         top: 0;
         left: 0;
@@ -156,6 +162,7 @@
         margin: 0;
         z-index: 2;
         position: fixed;
+        overflow-y: auto; // Allows scrolling if menu items exceed screen height
   
         &.mobile-show {
           display: block;
@@ -163,28 +170,34 @@
   
         a {
           display: flex;
-          justify-content: center;
+          justify-content: space-between; // Separates icon and text
           align-items: center;
+          padding: 15px 20px;  // Increase padding for touchability
+          font-size: 18px;     // Slightly increase font size
         }
   
         a:after {
           opacity: 1;
           position: initial;
           width: auto;
-          margin-left: 10PX;
+          margin-left: 10px;
         }
   
         a svg {
           opacity: 1 !important;
+          width: 25px; // Adjust the size for mobile if necessary
+          height: auto;
         }
-       }
+      }
   
-       .hamburger-icon,
-       .close-icon {
+      .hamburger-icon,
+      .close-icon {
           position: absolute;
           top: 15px;
           right: 15px;
           display: block;
-       }
+          width: 30px;  // Make the icon size touch-friendly
+          height: 30px; 
+      }
     }
-  }
+}
