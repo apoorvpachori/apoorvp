@@ -46,11 +46,11 @@ const About = () => {
                 </p>
                 <p align="LEFT">
                     I'm quiet confident, naturally curious, and perpetually working on
-                    improving my chops one design problem at a time.
+                    improving my chops one  problem at a time.
                 </p>
                 <p>
                     In my free time I like to play volleyball, work on side projects, and cook! Check
-                    out some of my projects on the projects page!
+                    out some of my projects on the work page!
                 </p>
             </div>
             <div className="stage-cube-cont">

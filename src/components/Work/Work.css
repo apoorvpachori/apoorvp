@@ -1,13 +1,17 @@
 .docWrapper {
-    position: relative; /* or absolute, depending on your needs */
-    top: 15%;
-    width: 40%; /* Adjust this to your preference */
-    height: 70%;
-    left: 10%;
+    position: absolute; /* or absolute, depending on your needs */
+    width: 35%; /* Adjust this to your preference */
+    height: 100%;
+
+    left: 50%;
+    @media (max-width: 350px) {
+        width: 20%; 
+    }
+
 }
 
 .docIframe {
     width: 100%; /* Make the iframe take the full width of its parent */
     height: 100%; /* Make the iframe take the full height of its parent */
-     /* Remove the default iframe border */
+    border: none; /* Remove the default iframe border */
 }
